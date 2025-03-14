@@ -1,4 +1,4 @@
-:root {
+:root{
     --primary-color: #333348;
     --text-color-primary: #fff;
     --text-color-secondary: #ccc;
@@ -25,7 +25,7 @@ body {
 }
 
 input:focus {
-    outline: none;
+    outline:none;
 }
 
 a {
@@ -37,6 +37,7 @@ a:focus {
     outline: 0;
     border: none;
 }
+
 
 .btn {
     padding: 1rem 2rem;
@@ -62,7 +63,8 @@ a:focus {
     color: #303030;
 }
 
-#main-content {
+
+#main-content{
     position: relative;
     box-sizing: border-box;
 }
@@ -139,10 +141,12 @@ a:focus {
     color: var(--text-color-tertiary-hover);
 }
 
+
 .selected {
     opacity: 1 !important;
     pointer-events: auto !important;
 }
+
 
 #toast-container {
     position: absolute;
@@ -176,6 +180,7 @@ a:focus {
     transform: translateY(-100%);
 }
 
+
 .l2-redirect-box {
     background: #bdc0c2;
     border-radius: 5px;
@@ -188,6 +193,7 @@ a:focus {
     font-weight: bold;
     line-height: 1;
 }
+
 
 .log {
     display: flex;
@@ -210,7 +216,7 @@ a:focus {
     border: none;
 }
 
-.position-relative { position: relative; }
+.position-relative { position: relative;}
 .position-absolute { position: absolute; }
 
 .d-none { display: none !important; }
@@ -268,53 +274,3 @@ a:focus {
 .mb-2 { margin-bottom: 0.5rem !important; }
 .mb-3 { margin-bottom: 1rem !important; }
 .mb-4 { margin-bottom: 1.5rem !important; }
-
-#run-jb {
-    width: 150px; /* تحديد العرض */
-    height: 150px; /* تحديد الارتفاع ليصبح متساويًا مع العرض */
-    border-radius: 50%; /* يجعل الزر دائريًا */
-    display: flex; /* يسمح بمحاذاة النص داخل الزر */
-    align-items: center; /* محاذاة النص في المنتصف عموديًا */
-    justify-content: center; /* محاذاة النص في المنتصف أفقيًا */
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: #003366; /* لون أزرق غامق */
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-
-#run-jb::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 10.01%);
-    background-size: 20px 20px;
-    border-radius: 50%;
-    animation: flame 2s linear infinite;
-}
-
-@keyframes flame {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-#run-jb:hover {
-    background-color: #002244; /* أزرق غامق أكثر عند التحويم */
-    color: white;
-    transform: scale(1.1); /* تكبير الزر قليلاً عند التحويم */
-}
-
-#run-jb:active {
-    transform: scale(0.95); /* تأثير الضغط على الزر */
-}
