@@ -1,22 +1,20 @@
-<html manifest="cache.appcache">
+<html>
+<!-- <html manifest="cache.appcache"> -->
 
 <head>
-    <title>PS4IDEA UMTX Jailbreak</title>
+    <title>PS5 UMTX Jailbreak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 
+<!-- body is set up as three rows: auto 1fr auto -->
 <body style="background-image: url('icon0.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center; min-height: 100vh;">
     <!-- Row 1 -->
     <div class="p-2">
-        <h1 class="text-center">PS4IDEA UMTX2 Jailbreak (1.xx-5.xx)</h1>
+        <h1 class="text-center">PS5 UMTX Jailbreak (1.xx-5.xx)</h1>
+        <p class="text-center" id="top-bar-text">Current firmware: <span class="fw-bold" id="current-fw"></span></p>
+
+        <!-- This is absolute positioned to the body-->
         <div id="toast-container"></div>
     </div>
 
@@ -30,15 +28,36 @@
             <textarea id="console" class="log" readonly></textarea>
         </div>
 
-        <div id="payloads-view"></div>
+        <div id="payloads-view">
+        </div>
     </div>
-	
-	 <div class="position-relative text-center p-2 mb-2"
-	<p class="text-center" id="top-bar-text">Current firmware: <span class="fw-bold" id="current-fw"></span></p>
-	<a> Thanks to all deves and people who contributed to the scene</a>
-	 </div>
 
-     
+    <!-- Row 3 -->
+    <div class="position-relative text-center p-2 mb-2">
+        <p class="text-secondary" id="version">v1.2</p>
+        <p class="text-secondary">creds & greetz</p>
+        <h3 class="text-secondary mt-2">
+            <a href="https://x.com/fail0verflow">@fail0verflow</a>,
+            <a href="https://twitter.com/flat_z">@flat_z</a>,
+            <a href="https://twitter.com/SpecterDev">@SpecterDev</a>,
+            ChendoChap,
+            SlidyBat,
+            abc/psfree,
+            <br />
+            idlesauce,
+            <a href="https://x.com/znullptr">@znullptr</a>,
+            <a href="https://twitter.com/notnotzecoxao">@notnotzecoxao</a>,
+            <a href="https://twitter.com/SocraticBliss">@SocraticBliss</a>,
+            <a href="https://github.com/john-tornblom">John Tornblom</a>,
+            <a href="https://discord.gg/kbrzGuH3F6">PS5 R&D Discord</a>
+        </h3>
+
+        <div class="position-absolute d-flex align-items-center bottom-0 left-0 m-4"> 
+            <div class="l2-redirect-box">L2</div>
+            <span class="ml-2">Redirect</span>
+        </div>
+    </div>
+
     <script src="int64.js"></script>
     <script src="rop.js"></script>
     <script src="exploit.js"></script>
@@ -51,6 +70,8 @@
     <script>
         addEventListener('unhandledrejection', (event) => {
             const reason = event.reason;
+            // We log the line and column numbers as well since some exceptions (like
+            // SyntaxError) do not show it in the stack trace.
             alert(
                 `${reason}\n`
                 + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
@@ -70,4 +91,5 @@
         };
     </script>
 </body>
+
 </html>
