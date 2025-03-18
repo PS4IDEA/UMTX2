@@ -64,24 +64,15 @@ const payload_map = [
         toPort: 9021
     },
 	{
-        displayTitle: "kstuff_5xx",
-        description: "FPKG enabler",
-        fileName: "kstuff.elf",
-        author: "sleirsgoevy",
-        projectSource: "https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb/ps5-kstuff",
-        binarySource: "https://github.com/sleirsgoevy/ps4jb2/blob/3e6053c3e4c691a9ccdc409172293a81de00ad7f/ps5-kstuff.bin",
-        version: "1.0",
-        supportedFirmwares: ["5."],
-    },
-    {
         displayTitle: "ps5-kstuff",
         description: "FPKG enabler",
-        fileName: "ps5-kstuff.bin",
-        author: "sleirsgoevy",
-        projectSource: "https://github.com/sleirsgoevy/ps4jb-payloads/tree/bd-jb/ps5-kstuff",
-        binarySource: "https://github.com/sleirsgoevy/ps4jb2/blob/3e6053c3e4c691a9ccdc409172293a81de00ad7f/ps5-kstuff.bin",
-        version: "3e6053c",
-        supportedFirmwares: ["3.", "4."]
+        fileName: "kstuff.elf",
+        author: "sleirsgoevy, john-tornblom, EchoStretch, buzzer-re, BestPig, LightningMods, zecoxao",
+        projectSource: "https://github.com/EchoStretch/kstuff",
+        binarySource: "https://github.com/EchoStretch/kstuff/releases/download/5xx-support-v1/kstuff.elf",
+        version: "081f53b",
+        supportedFirmwares: ["3.", "4.", "5."],
+        toPort: 9021
     },
     {
         displayTitle: "Byepervisor HEN",
