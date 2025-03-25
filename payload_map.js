@@ -72,6 +72,7 @@ const payload_map = [
         binarySource: "https://github.com/EchoStretch/kstuff/releases/download/5xx-support-v1/kstuff.elf",
         version: "081f53b",
         supportedFirmwares: ["3.", "4.", "5."],
+        toPort: 9021
     },
     {
         displayTitle: "Byepervisor HEN",
