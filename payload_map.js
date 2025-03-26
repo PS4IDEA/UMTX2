@@ -54,9 +54,9 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "etaHEN [PRE-RELEASE]",
+        displayTitle: "etaHEN2.0b",
         description: "AIO HEN",
-        fileName: "etaHEN.2.0b.prerelease.bin",
+        fileName: "etaHEN.2.0b..bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
         binarySource: "- from discord",
@@ -64,7 +64,7 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "ps5-kstuff",
+        displayTitle: "kstuff",
         description: "FPKG enabler",
         fileName: "kstuff.elf",
         author: "sleirsgoevy, john-tornblom, EchoStretch, buzzer-re, BestPig, LightningMods, zecoxao",
