@@ -54,7 +54,7 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "etaHEN2.0b",
+        displayTitle: "etaHEN2.0b-NEW",
         description: "AIO HEN",
         fileName: "etaHEN-2.0b.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
