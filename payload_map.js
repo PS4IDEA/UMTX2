@@ -123,14 +123,13 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "ps5debug",
+        displayTitle: "ps5debug-b3",
         description: "Debugger (Experimental beta)",
-        fileName: "ps5debug_v1.0b2.elf",
+        fileName: "ps5debug_v1.0b3.elf",
         author: "SiSTR0, ctn123",
         projectSource: "https://github.com/GoldHEN/ps5debug",
         binarySource: "https://github.com/GoldHEN/ps5debug/releases/download/1.0b2/ps5debug_v1.0b2.elf",
-        version: "1.0b2",
-        supportedFirmwares: ["3.", "4."],
+        version: "1.0b3",
         toPort: 9021
     },
     {
