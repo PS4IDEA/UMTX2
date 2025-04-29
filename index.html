@@ -1,23 +1,29 @@
 <html manifest="cache.appcache">
-<!-- <html manifest="cache.appcache"> -->
-
 <head>
     <title>PS4IDEA UMTX2 Jailbreak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        body, h1, h3, p, a, span, div, #console {
+            color: white !important;
+            text-shadow: 8px 8px 20px black; /* تظليل قوي جدًا */
+        }
+
+        .btn {
+            background-color: #222 !important;
+            color: white !important;
+            text-shadow: 8px 8px 20px black;
+        }
+    </style>
 </head>
 
-<!-- body is set up as three rows: auto 1fr auto -->
 <body style="background-image: url('icon0.png'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center; min-height: 100vh;">
-    <!-- Row 1 -->
     <div class="p-2">
         <h1 class="text-center">PS4IDEA UMTX2 (1.xx-5.xx)</h1>
-        
-        <!-- This is absolute positioned to the body-->
         <div id="toast-container"></div>
     </div>
 
-    <!-- Row 2 -->
     <div id="main-content">
         <div id="pre-jb-view" class="d-flex align-items-center justify-content-center flex-direction-column selected">
             <a tabindex="0" class="btn fw-bold" id="run-jb" onclick="run()">Jailbreak</a>
@@ -27,18 +33,17 @@
             <div id="console" class="log"></div>
         </div>
 
-        <div id="payloads-view">
-        </div>
+        <div id="payloads-view"></div>
     </div>
 
-    <!-- Row 3 -->
     <div class="position-relative text-center p-2 mb-2">
-                <p class="text-center" id="top-bar-text">Current firmware: <span class="fw-bold" id="current-fw"></span></p>
+        <p class="text-center" id="top-bar-text">
+            Current firmware: <span class="fw-bold" id="current-fw"></span>
+        </p>
         <h3 class="text-secondary mt-2">
-            <a> MY YOUTUBE CHANNEL</a>
-            <a href="https://www.youtube.com/@PS4IDEA">@PS4IDEA</a>
-            <br />
-            <a> Thanks to all deves and people who contributed to the scene</a>
+            <a>MY YOUTUBE CHANNEL</a>
+            <a href="https://www.youtube.com/@PS4IDEA">@PS4IDEA</a><br />
+            <a>Thanks to all deves and people who contributed to the scene</a>
         </h3>
 
         <div class="position-absolute d-flex align-items-center bottom-0 left-0 m-4">
@@ -60,8 +65,6 @@
     <script>
         addEventListener('unhandledrejection', (event) => {
             const reason = event.reason;
-            // We log the line and column numbers as well since some exceptions (like
-            // SyntaxError) do not show it in the stack trace.
             alert(
                 `${reason}\n`
                 + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
@@ -69,9 +72,11 @@
             );
             throw reason;
         });
+
         document.getElementById("current-fw").innerHTML = fw_str;
         registerAppCacheEventHandlers();
         registerL2ButtonHandler();
+
         window.onload = function () {
             let autoload = sessionStorage.getItem(SESSIONSTORE_ON_LOAD_AUTORUN_KEY);
             if (autoload) {
@@ -80,5 +85,4 @@
         };
     </script>
 </body>
-
 </html>
