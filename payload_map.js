@@ -37,7 +37,7 @@ const payload_map = [
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
         projectSource: "https://github.com/LightningMods/etaHEN",
         binarySource: "- from discord",
-        version: "2.0b",
+        version: "2.1b",
         toPort: 9021
     },
     {
@@ -47,7 +47,7 @@ const payload_map = [
         author: "sleirsgoevy, john-tornblom, EchoStretch, buzzer-re, BestPig, LightningMods, zecoxao",
         projectSource: "https://github.com/EchoStretch/kstuff",
         binarySource: "https://github.com/EchoStretch/kstuff/releases/download/5xx-support-v1/kstuff.elf",
-        version: "081f53b",
+        version: "1.5",
         supportedFirmwares: ["3.", "4.", "5."],
         toPort: 9021
     },
