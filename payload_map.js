@@ -52,6 +52,15 @@ const payload_map = [
         toPort: 9021
     },
     {
+        displayTitle: "app title",
+        description: "show app title",
+        fileName: "app_title.elf",
+        author: "master_s9", 
+        version: "1.0",
+        supportedFirmwares: ["1.00", "1.01", "1.02", "1.12", "1.14", "2.00", "2.20", "2.25", "2.26", "2.30", "2.50", "2.70"],
+        toPort: 9021
+    },
+    {
         displayTitle: "Byepervisor HEN",
         description: "FPKG enabler",
         fileName: "byepervisor.elf",
