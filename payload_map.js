@@ -41,13 +41,13 @@ const payload_map = [
         toPort: 9021
     },
     {
-        displayTitle: "kstuff 1.5 (fix DLC)",
-        description: "FPKG enabler",
+        displayTitle: "kstuff",
+        description: "FPKG enabler + fix DLC",
         fileName: "kstuff.elf",
         author: "sleirsgoevy, john-tornblom, EchoStretch, buzzer-re, BestPig, LightningMods, zecoxao",
         projectSource: "https://github.com/EchoStretch/kstuff",
         binarySource: "https://github.com/EchoStretch/kstuff/releases/download/5xx-support-v1/kstuff.elf",
-        version: "1.5",
+        version: "1.6",
         supportedFirmwares: ["3.", "4.", "5."],
         toPort: 9021
     },
@@ -175,4 +175,5 @@ const payload_map = [
     }
 
 ];
+
 
