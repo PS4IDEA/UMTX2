@@ -31,7 +31,7 @@ const payload_map = [
     //     supportedFirmwares: ["1.", "2.", "3.", "4.", "5."]
     // },
     {
-        displayTitle: "etaHEN 2.3B",
+        displayTitle: "etaHEN 2.4B",
         description: "AIO HEN",
         fileName: "etaHEN.bin",
         author: "LightningMods, Buzzer, sleirsgoevy, ChendoChap, astrelsky, illusion, CTN, SiSTR0, Nomadic",
@@ -175,6 +175,7 @@ const payload_map = [
     }
 
 ];
+
 
 
 
